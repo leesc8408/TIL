@@ -2,4 +2,4 @@
 
 ## 학습일별
 - [220705_markdown](./0705_markdown/)
-- [220706_git&github](./0706_git_github/)
+- [220706_git_github](./0706_git_github/)
