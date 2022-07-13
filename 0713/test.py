@@ -1,7 +1,3 @@
-def gugu(n):
-    print(n, '단', sep='')
-    for i in range(1, 9 + 1):
-        print(f'{n} X {i} = {n * i}')
-
-for i in range(2, 9 + 1):
-    gugu(i)
+def num(*args):
+    for arg in args:
+        print(arg(1,3,4,5,))
