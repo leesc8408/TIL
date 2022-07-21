@@ -1,2 +1,1 @@
-
-print(chr(1))
+print(list(range(199)))
