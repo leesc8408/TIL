@@ -1,0 +1,5 @@
+{
+    "powermode.presets": "simple-rift",
+    "powermode.enabled": true,
+    "powermode.combo.counterEnabled": "default"
+}
