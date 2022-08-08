@@ -61,5 +61,21 @@
 
 - 큐브의 면이 회전 하듯 90도, 270도 등으로 회전 시키켜야 하는 경우가 생긴다.
 
-   
+  ```python
+  # 왼쪽 90도 회전 예시
+  matrix = [
+  	[1, 2, 3],
+  	[4, 5, 6],
+  	[7, 8, 9]
+  ]
+  
+  n = 3
+  rotated_matrix = [[0] * n for _ in range(n)]
+  # 회전 시킨 값들을 할장할 새로운 2차원 리스트 생성
+  for i in range(n):
+  	for j in range(n):
+  		rotated_matrix[i][j] = matrix[j][n-i-1]
+  ```
+  
+  
 
