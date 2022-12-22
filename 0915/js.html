@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red { 
+          color: red;
+        }
+        .blue {
+          color: blue;
+        }
+      </style>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+      
+</head>
+<body>
+    <script>
+        console.log('hellom js!')
+        const title = document.createElement('h1')
+        title.innerText = 'first javascript'
+        const body = document.querySelector('body')
+        body.appendChild(title)
+        const sub_title = document.createElement('h2')
+        sub_title.innerText = 'Sub-Title'
+        body.appendChild(sub_title)
+        
+    </script>
+    <h3>third-title</h3>
+    <script>
+        const sub_text = document.createElement('p')
+        sub_text.innerText = 'lorem10'
+        body.appendChild(sub_text)
+    </script>
+
+        <!-- <h1 id="title">JS 기초</h1> -->
+        <h2>DOM 조작</h2>
+        <p class="text">querySelector</p>
+        <p class="text">querySelectorAll</p>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem, ipsum.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+    <script>
+        // 선택자를 활용해 선택할 때 
+        // 하나를 선택한다. => querySelector
+        // 모든 결과를 선택한다. => querySelectorAll
+    
+        console.log(document.querySelector('#title'))
+        // <h1 id="title">JS 기초</h1>
+        console.log(document.querySelectorAll('.text'))
+        // NodeList(2) [p.text, p.text]
+        console.log(document.querySelector('.text'))
+        // <p class="text">querySelector</p>
+        console.log(document.querySelectorAll('p'))
+    </script>
+
+    <h1 class="red text-center my-5">안녕하세요</h1>
+    <script>
+        // a tag 조작
+        const a = document.createElement('a')
+        a.innerText = '실라버스'
+        body.appendChild(a)
+        a.setAttribute('href', 'https://syllaverse.com')
+        console.log(a.getAttribute('href'))
+    
+        // // h1 tag 조작 (클래스)
+        const h1 = document.querySelector('h1')
+        console.log(h1.classList)
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
